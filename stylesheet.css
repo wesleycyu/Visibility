@@ -135,8 +135,9 @@ footer {
 }
 
 #weather-stats {
-  width: 20%;
-  height: 70%;
+  width: 350px;
+  height: 250px;
+  margin: auto;
   background-color: white;
   border: 1px dashed red;
 }
