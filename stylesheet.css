@@ -30,9 +30,12 @@ h1 {
   padding-top: 15px;
   height: 57px;
   display: block;
-  background-color: #4E4E50;
   color: white;
   text-align: center;
+}
+
+.container {
+  background-image: url("bg.jpg");
 }
 
 .header {
@@ -43,26 +46,69 @@ h1 {
 
 #search {
   font-size: 3em;
+  background-color: transparent;
+  color: white;
   outline: none;
-  border: 1px solid #4E4E50;
-  text-align: center;
+  border-bottom: 5px solid white;
+  text-align: left;
+  padding-left: 10px;
   padding-top: 3px;
   padding-bottom: 8px;
 }
 
+#search input[text] {
+  outline: none;
+}
+
 #search-icon {
   font-size: 2.5em;
-  background-color: #4E4E50;
+  background-color: transparent;
   color: white;
   padding-left: 17px;
   padding-right: 21px;
   padding-top: 11px;
   padding-bottom: 10px;
-
+  cursor: pointer;
 }
+
+#results-field {
+  text-align: left;
+  width: 37%;
+  margin: auto;
+  padding-right: 69px;
+  padding-left: 0;
+  list-style-type: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#results-field li {
+  font-size: 1.3em;
+  padding-left: 15px;
+  padding-bottom: 7px;
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+#results-field li:hover {
+  background-color: rgba(254, 254, 254, 0.19);
+  color: #262626;
+}
+
+input {
+  border: 0px solid;
+}
+
 
 #nav li {
   display: inline;
+}
+
+#github-icon {
+  font-size: 2.3em;
+  color: white;
+  cursor: pointer;
 }
 
 footer {
@@ -74,4 +120,51 @@ footer {
   padding-bottom: 20px;
   padding-top: 20px;
   bottom: 0%;
+}
+
+#weather-display {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  top: 10%;
+}
+
+#weather-display h1 {
+  font-size: 10em;
+  color: white;
+}
+
+#weather-stats {
+  width: 20%;
+  height: 70%;
+  background-color: white;
+  border: 1px dashed red;
+}
+
+.hidden {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+   font-size: .7em;
+   padding-top: 20px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+   font-size: .7em;
+   padding-top: 20px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+   font-size: .7em;
+   padding-top: 20px;
+}
+
+:-ms-input-placeholder {
+   color: white;
+   font-size: .7em;
+   padding-top: 20px;
 }

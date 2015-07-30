@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="stylesheet.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="/application.js"></script>
+        <script src="application.js"></script>
         <title>Visibility</title>
     </head>
 
@@ -22,12 +22,18 @@
                 </div>
             </div>
 
+                <div id="weather-display">
+                    <h1>39°C</h1>
+                    <div id="weather-stats"> </div>
+                </div>
+
             <div class="body">
-                <div id="search-box">
-                    <input type="text" placeholder="Search" id="search"><span id="search-icon"><i class="fa fa-search"></i></span>
+
+                <div class="hidden" id="search-box">
+                    <input type="text" placeholder="How's the weather in..." id="search"><span id="search-icon"><i class="fa fa-search"></i></span>
+                    <div id="results"></div>
                 </div>
-                <div id="results">
-                </div>
+
             </div>
 
         </div>
