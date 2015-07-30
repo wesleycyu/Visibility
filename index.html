@@ -9,24 +9,25 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="stylesheet.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="application.js"></script>
+        <script src="/application.js"></script>
         <title>Visibility</title>
     </head>
 
     <body>
         <div class="container">
-            <div class="menu">
-                <ul id="nav">
-                    <li>ABOUT</li>
-                </ul>
-            </div>
 
-            <div class="header">
-                <h1>Visibility</h1>
+            <div class="menu">
+                <div class="header">
+                    <h1><i class="fa fa-bolt"></i>  Visibility</h1>
+                </div>
             </div>
 
             <div class="body">
-                <input type="text" placeholder="Search" id="search"><span id="search-id"><i class="fa fa-search"></i></span>
+                <div id="search-box">
+                    <input type="text" placeholder="Search" id="search"><span id="search-icon"><i class="fa fa-search"></i></span>
+                </div>
+                <div id="results">
+                </div>
             </div>
 
         </div>
@@ -35,7 +36,7 @@
 
     <footer>
         <div class="footer">
-            <b>Copyright - 2015</b>
+            <i id="github-icon" class="fa fa-github"></i>
         </div>
     </footer>
 </html>
