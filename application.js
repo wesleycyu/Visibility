@@ -39,23 +39,22 @@ $(function () {
     });
   };
 
-
-
   $(document).on("click", ".location", function(){
     var location = $(this).text().split(",")[0].replace(" ", "_");
     weatherCall(location);
   })
 
-  $($search).keypress(function(e) {
-    if(e.which == 13) {
-      var query = $($search).val()
+  $($search).on("keyup",function(e) {
+    var query = $($search).val()
+    $($results).empty();
+    if (query !== "") {
       searchCall(query);
     }
   })
 
   $("#search-icon").on("click", function() {
-      var query = $($search).val()
-      searchCall(query);
+    var query = $($search).val()
+    searchCall(query);
   })
 
   $("#github-icon").on("click", function(){
