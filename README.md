@@ -8,6 +8,7 @@ Visibility is a simple weather app where users can:
 
 ## Stack
  - HTML/CSS/jQuery
+ - wunderground weather API / Autocomplete API
 
 ## More info
 - An App I made to familiarize myself with jQuery AJAX & 3rd Party APIs.
